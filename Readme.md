@@ -1,7 +1,8 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Katerina Miteneva](https://up.htmlacademy.ru/adaptive/11/user/199591).
-* Наставник: `Неизвестно`.
+Проверяю пользователя Гита
+* Наставник: [Olga Odnokolova](https://htmlacademy.ru/profile/id38936).
 
 ---
 
