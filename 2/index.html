@@ -7,11 +7,13 @@
 </head>
   <body>
     <header class="main-header container">
-      <img class="logo" src="http://placehold.it/90x40">
+      <a class="logo">
+        <img class="logo__img" src="http://placehold.it/90x40">
+      </a>
       <nav class="main-nav"> <!--class="main-nav--open"-->
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="#">Каталог товаров</a>
+            <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__list-item">
             <a href="#">Вязание на заказ</a>
@@ -27,26 +29,26 @@
     </header>
     <main>
       <div class="page-title page-title--main">
-        <h1>Милые штучки ручной работы для дома</h1>
+        <h1 class="container">Милые штучки ручной работы для дома</h1>
       </div>
       <section class="directory-catalog">
         <ul class="directory-catalog__list">
           <li class="directory-catalog__item directory-catalog__item--interior">
-            <a href="#">Предметы интерьера</a>
+            <a href="catalog-interior.html">Предметы интерьера</a>
           </li>
           <li class="directory-catalog__list-item directory-catalog__item--toys">
-            <a href="#">Детские игрушки</a>
+            <a href="catalog-toys.html">Детские игрушки</a>
           </li>
         </ul>
       </section>
-      <section class="popular">
+      <section class="popular container">
         <h2 class="popular__title">Вязаные корзинки</h2>
-        <b class="popular__description">Товар недели</b>
+        <b class="popular__subtitle">Товар недели</b>
         <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
         <table class="popular__spec">
           <tr class="popular__spec--row">
             <td class="popular__spec--col">Цвет</td>
-            <td class="popular__spec--col">"Тиффани"/серый</td>
+            <td class="popular__spec--col">&#171;Тиффани&#187;/серый</td>
           </tr>
           <tr class="popular__spec--row">
             <td class="popular__spec--col">Диаметр</td>
@@ -61,7 +63,7 @@
         <p class="popular__price">Цена: 990 руб.</p>
         <button class="btn" type="button">Заказать</button>
       </section>
-      <section class="features">
+      <section class="features container">
         <h2 class="features__title">Коротко о нас</h2>
         <div class="features__item features__item--ecology">
           <p>Экологически чистые материалы</p>
@@ -82,7 +84,7 @@
           <p>Поставляется в подарочной упаковке</p>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews container">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="slider">
           <blockquote class="reviews__item slider__item">
@@ -98,8 +100,8 @@
         <a class="btn" href="add-review.html">Написать</a>
       </section>
       <section class="contacts">
-        <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__information">
+        <h3 class="contacts__title container">Контакты</h3>
+        <table class="contacts__information container">
           <tr class="contacts__information--row">
             <td class="contacts__information--col">Цвет</td>
             <td class="contacts__information--col">"Тиффани"/серый</td>
@@ -110,11 +112,11 @@
           </tr>
         </table>
         <div class="contacts__map"></div>
-        <a class="btn" href="feedback-form.html">Напишите нам</a>
+        <a class="btn container" href="feedback-form.html">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="container">
         <div class="social-links">
           <a class="social-link social-link--instagram" href="#">Мы в Инстаграмме</a>
           <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
@@ -123,5 +125,16 @@
         <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
     </footer>
+    <div class="modal-window">
+      <div class="add-cart">
+        <h2 class="add-cart__title">Добавить в корзину</h2>
+        <p>Выберите размер:</p>
+        <!-- Сообразила, что далее идет форма с радио-баттон, исправлю позже -->
+        <span class="add-cart__size">S</span>
+        <span class="add-cart__size">M</span>
+        <span class="add-cart__size">L</span>
+        <button class="add-cart__btn btn btn--color" type="submit">Добавить</button>
+      </div>
+    </div>
   </body>
 </html>
