@@ -12,17 +12,17 @@
       </a>
       <nav class="main-nav"> <!--class="main-nav--open"-->
         <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
+          <li class="main-nav__item main-nav__item--active">
             <a>Каталог товаров</a>
           </li>
-          <li class="main-nav__list-item">
+          <li class="main-nav__item">
             <a href="#">Вязание на заказ</a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item--search">
+          <li class="main-nav__item main-nav__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item--cart">
-            <a href="#">Корзина: <span>пока пуста</span></a>
+          <li class="main-nav__item main-nav__item--cart">
+            <a href="#">Корзина: <span class="main-nav__cart-total">пока пуста</span></a>
           </li>
         </ul>
       </nav>
@@ -39,11 +39,9 @@
           <a class="product-item__caption" href="product-bunny.html">
             <h2>Зайчик-попрыгайчик</h2>
           </a>
-          <p>Рост 30 см, вес 200 г</p>
-          <div class="product-item__price">
-            <span>1 200 руб.</span>
-            <span class="product-item__price--cart">Корзина</span>
-          </div>
+          <p class="product-item__spec">Рост 30 см, вес 200 г</p>
+          <span class="product-item__price">1 200 руб.</span>
+          <button class="product-item__cart" type="button">Корзина</button>
         </article>
         <article class="product-item">
           <a class="product-item__img" href="product-basket-linen.html">
@@ -52,11 +50,9 @@
           <a class="product-item__caption" href="product-bunny.html">
             <h2>Корзинка для белья</h2>
           </a>
-          <p>Диаметр 15 см, высота 10 см</p>
-          <div class="product-item__price">
-            <span>690 руб.</span>
-            <span class="product-item__price--cart">Корзина</span>
-          </div>
+          <p class="product-item__spec">Диаметр 15 см, высота 10 см</p>
+          <span class="product-item__price">690 руб.</span>
+          <button class="product-item__cart" type="button">Корзина</button>
         </article>
         <article class="product-item">
           <a class="product-item__img" href="product-basket-toys.html">
@@ -65,11 +61,9 @@
           <a class="product-item__caption" href="product-basket-toys.html">
             <h2>Большая корзинка для игрушек</h2>
           </a>
-          <p>Диаметр 30 см, высота 30 см</p>
-          <div class="product-item__price">
-            <span>1 500 руб.</span>
-            <span class="product-item__price--cart">Корзина</span>
-          </div>
+          <p class="product-item__spec">Диаметр 30 см, высота 30 см</p>
+          <span class="product-item__price">1 500 руб.</span>
+          <button class="product-item__cart" type="button">Корзина</button>
         </article>
       </section>
       <article class="video-block container">
@@ -96,11 +90,24 @@
     <div class="modal-window">
       <div class="add-cart">
         <h2 class="add-cart__title">Добавить в корзину</h2>
-        <p>Выберите размер:</p>
-        <span class="add-cart__size">S</span>
-        <span class="add-cart__size">M</span>
-        <span class="add-cart__size">L</span>
-        <button class="add-cart__btn btn btn--color" type="submit">Добавить</button>
+        <form class="add-cart__form" method="get" action="#">
+          <p class="add-cart__text">Выберите размер:</p>
+          <div class="add-cart__choose">
+            <label class="add-cart__field-text">
+              <input class="add-cart__radio" type="radio" name="size" value="S">
+              S
+            </label>
+            <label class="add-cart__field-text">
+              <input class="add-cart__radio" type="radio" name="size" value="M">
+              M
+            </label>
+            <label class="add-cart__field-text">
+              <input class="add-cart__radio" type="radio" name="size" value="L">
+              L
+            </label>
+          </div>
+          <button class="add-cart__btn btn btn--color" type="submit">Добавить</button>
+        </form>
       </div>
     </div>
   </body>
