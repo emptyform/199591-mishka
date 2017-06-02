@@ -1,0 +1,23 @@
+.video-block {
+  margin: 0 auto;
+  margin-bottom: 58px;
+  padding: 25px 34px 33px;
+  width: 190px;
+  border: 1px solid #ececec;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444;
+
+  video {
+    margin-left: -34px;
+    background-image: url(../../img/video-mobile@1x.jpg);
+  }
+}
+
+.video-block__title {
+  padding-left: 56px;
+  font-size: 17px;
+  color: #000;
+}
+
+

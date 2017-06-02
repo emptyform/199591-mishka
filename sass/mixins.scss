@@ -1,0 +1,12 @@
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+
+  background-color: #fff;
+  width: 320px;
+}
+
+@mixin border-bottom() {
+  border-bottom: 1px solid #ececec;
+}

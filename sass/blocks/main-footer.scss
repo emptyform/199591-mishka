@@ -1,0 +1,20 @@
+.main-footer {
+  background-color: #f1f1f1;
+}
+
+.main-footer__copyright {
+  display: block;
+  padding: 20px 50px;
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-footer__social-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  @include border-bottom();
+}

@@ -1,0 +1,144 @@
+.order-form__desc {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444;
+}
+
+.order-form__block {
+  padding-left: 0;
+//  width: 200px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+}
+
+.order-form__caption {
+  padding: 20px 20px;
+  padding-left: 0;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #62d1ba;
+  text-transform: uppercase;
+}
+
+.order-form__label {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.order-form__filter {
+  display: none;
+}
+
+.order-form__filter {
+
+  +span {
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 62px;
+    cursor: pointer;
+  }
+
+  +span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 2px solid #444;
+  }
+
+  &--radio+span::before {
+    border-radius: 50%;
+  }
+
+  &--radio:checked+span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+  }
+
+  &--checkbox:checked+span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 6px;
+    width: 24px;
+    height: 10px;
+    background-color: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg);
+  }
+}
+
+.order-form__input {
+  box-sizing: border-box;
+  padding: 19px 5px;
+  padding-left: 0;
+  width: 260px;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid #000;
+
+  &--textarea {
+    padding-left: 15px;
+    border: 2px solid #000;
+  }
+}
+
+::-webkit-input-placeholder{
+	color: rgba(68, 68, 68, 0.3);
+}
+
+::-moz-placeholder{
+	color: rgba(68, 68, 68, 0.3);
+}
+
+:-moz-placeholder{
+	color: rgba(68, 68, 68, 0.3);
+}
+
+:-ms-input-placeholder {
+	color: rgba(68, 68, 68, 0.3);
+}
+
+.order-form__conditions {
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-form__btn {
+  margin-bottom: 55px;
+  background-color: #fff;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

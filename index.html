@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header container">
-      <a class="logo">
-        <img class="logo__img" src="http://placehold.it/90x40">
-      </a>
+    <header class="main-header">
+      <div class="container">
+        <a class="logo">
+          <img class="logo__img" src="img/logo-mobile.svg">
+        </a>
+        <a class="main-header__hamburger" href="#">Открыть меню</a>
+      </div>
       <nav class="main-nav"> <!--class="main-nav--open"-->
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -28,7 +32,7 @@
     </header>
     <main>
       <div class="page-title page-title--main">
-        <h1 class="container">Милые штучки ручной работы для дома</h1>
+        <h1 class="container">Милые штучки ручной <br> работы для дома</h1>
       </div>
       <section class="directory-catalog">
         <ul class="directory-catalog__list">
@@ -46,19 +50,19 @@
         <p class="popular__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
         <table class="popular__table">
           <tr class="popular__table-row">
-            <td class="popular__table-col">Цвет</td>
+            <td class="popular__table-col">Цвет:</td>
             <td class="popular__table-col">&#171;Тиффани&#187;/серый</td>
           </tr>
           <tr class="popular__table-row">
-            <td class="popular__table-col">Диаметр</td>
+            <td class="popular__table-col">Диаметр:</td>
             <td class="popular__table-col">25 см</td>
           </tr>
           <tr class="popular__table-row">
-            <td class="popular__table-col">Высота</td>
+            <td class="popular__table-col">Высота:</td>
             <td class="popular__table-col">15 см</td>
           </tr>
         </table>
-        <img class="popular__img" src="http://placehold.it/260x315">
+        <img class="popular__img" src="img/triple-set-mobile@1x.jpg" alt="вязаные корзинки" width="260" height="315">
         <p class="popular__price">Цена: 990 руб.</p>
         <a class="btn" href="add-cart.html">Заказать</a>
       </section>
@@ -98,25 +102,27 @@
         </div>
         <a class="btn" href="add-review.html">Написать</a>
       </section>
-      <section class="contacts">
-        <h3 class="contacts__title container">Контакты</h3>
-        <table class="contacts__table container">
+      <section class="contacts container">
+        <h3 class="contacts__title">Контакты</h3>
+        <table class="contacts__table">
           <tr class="contacts__table-row">
             <td class="contacts__table-col">e-mail:</td>
-            <td class="contacts__table-col">info@mimimishkashop.ru</td>
+            <td class="contacts__table-col">
+              <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
+            </td>
           </tr>
           <tr class="contacts__table-row">
             <td class="contacts__table-col">адрес:</td>
-            <td class="contacts__table-col">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <td class="contacts__table-col contacts__table-col--adress">г. Санкт-Петербург,  ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
           </tr>
         </table>
         <div class="contacts__map"></div>
-        <a class="btn container" href="feedback-form.html">Напишите нам</a>
+        <a class="btn contacts__btn" href="feedback-form.html">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
       <div class="container">
-        <div class="social-links">
+        <div class="main-footer__social-links">
           <a class="social-link social-link--instagram" href="#">Мы в Инстаграмме</a>
           <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
           <a class="social-link social-link--vk" href="#">Мы в Инстаграмме</a>
@@ -125,22 +131,22 @@
       </div>
     </footer>
     <div class="modal-window">
-      <div class="add-cart">
+      <div class="add-cart container">
         <h2 class="add-cart__title">Добавить в корзину</h2>
         <form class="add-cart__form" method="get" action="#">
           <p class="add-cart__text">Выберите размер:</p>
           <div class="add-cart__filter">
             <label class="add-cart__field-text">
-              <input class="add-cart__radio" type="radio" name="size" value="S">
-              S
+              <input class="add-cart__radio" type="radio" name="size" value="S" checked>
+              <span>S</span>
             </label>
             <label class="add-cart__field-text">
               <input class="add-cart__radio" type="radio" name="size" value="M">
-              M
+              <span>M</span>
             </label>
             <label class="add-cart__field-text">
               <input class="add-cart__radio" type="radio" name="size" value="L">
-              L
+              <span>L</span>
             </label>
           </div>
           <button class="add-cart__btn btn btn--color" type="submit">Добавить</button>

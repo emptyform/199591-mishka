@@ -1,0 +1,43 @@
+.contacts {
+  margin-top: 44px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.contacts__table {
+  margin-bottom: 40px;
+  border-spacing: 5px 20px;
+}
+
+.contacts__table-col {
+  padding: 5px 0;
+  width: 185px;
+
+  &--adress {
+    padding-right: 40px;
+  }
+}
+
+.contacts__email {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__map {
+  margin-left: -30px;
+  height: 457px;
+  width: 320px;
+  background-color: #f3f1ea;
+  background-image: url(../../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat;
+}
+
+.contacts__btn {
+  margin: 39px auto;
+}

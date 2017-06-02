@@ -1,0 +1,38 @@
+.main-header {
+  position: relative;
+  padding: 22px 0;
+  min-height: 35px;
+  background-color: #fff;
+  @include border-bottom();
+}
+
+.main-header__hamburger {
+  font-size: 0;
+  position: absolute;
+  display: block;
+  top: 38px;
+  right: 30px;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+
+}

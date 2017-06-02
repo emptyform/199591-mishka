@@ -1,0 +1,25 @@
+.page-title {
+
+  h1 {
+    margin: 0;
+    padding-top: 75px;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &--main {
+    min-height: 280px;
+    background-color: #fbfbfb;
+    background-image: url(../../img/hero-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &--inner {
+    margin-bottom: 30px;
+    min-height: 175px;
+    background-color: #f1f1f1;
+  }
+}
