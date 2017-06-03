@@ -3,10 +3,7 @@
 }
 
 .contacts__title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000;
+  @include font(18px, 30px, bold, #000);
 }
 
 .contacts__table {
@@ -24,17 +21,17 @@
 }
 
 .contacts__email {
-  color: #444;
+  color: $font-color;
   text-decoration: none;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $color-green;
 }
 
 .contacts__map {
   margin-left: -30px;
   height: 457px;
   width: 320px;
-  background-color: #f3f1ea;
-  background-image: url(../../img/map-mobile@1x.jpg);
+  background-color: $bg-grey;
+  background-image: url(../img/map-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 

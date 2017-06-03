@@ -4,14 +4,10 @@
 }
 
 .features__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
+  @include font(25px, 30px, bold, #000);
 }
 
 .features__item {
   padding-top: 60px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
+  @include font(17px, 20px, bold, #000);
 }

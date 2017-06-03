@@ -6,10 +6,7 @@
 
 .add-cart__title {
   padding: 5px 55px;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000;
+  @include font(25px, 30px, bold, #000);
   text-transform: uppercase;
 }
 
@@ -22,26 +19,22 @@
 .add-cart__radio {
   display: none;
 
-  + span {
+  & + span {
     display: block;
     padding: 18px 10px;
     width: 58px;
     text-align: center;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
-    color: #444;
-    border: 2px solid #ececec;
+    @include font(17px, 18px, bold);
+    border: 2px solid $border-color;
     cursor: pointer;
   }
 
-  &:checked +span {
-    border-color: #63d1bb;
+  &:checked + span {
+    border-color: $color-green;
   }
 }
 
 .add-cart__btn {
   width: 100%;
   border: none;
-  background-color: #63d1bb;
 }

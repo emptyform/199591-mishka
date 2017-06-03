@@ -1,11 +1,13 @@
 
 
 @import "normalize.scss";
+@import "variables.scss";
 @import "mixins.scss";
 
 
 @import "global/fonts.scss";
-@import "global/container.scss";
+@import "global/basic.scss";
+
 
 @import "blocks/btn.scss";
 @import "blocks/main-header.scss";

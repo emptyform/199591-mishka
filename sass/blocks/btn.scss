@@ -2,10 +2,7 @@
   display: block;
   box-sizing: border-box;
   padding: 15px 15px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #444;
+  @include font(17px, 20px, bold);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -13,7 +10,7 @@
 
   &--color {
     color: #fff;
-    background-color: 63d1bb;
+    background-color: #63d1bb;
   }
 }
 

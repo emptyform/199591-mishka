@@ -1,23 +1,17 @@
 .order-form__desc {
-  font-size: 13px;
-  line-height: 24px;
-  color: #444;
+  @include font(13px, 24px);
 }
 
 .order-form__block {
   padding-left: 0;
-//  width: 200px;
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $color-green;
 }
 
 .order-form__caption {
   padding: 20px 20px;
   padding-left: 0;
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: bold;
-  color: #62d1ba;
+  @include font(17px, 17px, bold, $color-green);
   text-transform: uppercase;
 }
 
@@ -25,10 +19,7 @@
   display: block;
   padding-top: 17px;
   padding-bottom: 17px;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-  color: #000;
+  @include font(17px, 18px, bold, #000);
 }
 
 .order-form__filter {
@@ -37,7 +28,7 @@
 
 .order-form__filter {
 
-  +span {
+  & + span {
     position: relative;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -45,7 +36,7 @@
     cursor: pointer;
   }
 
-  +span::before {
+  & + span::before {
     content: "";
     position: absolute;
     display: block;
@@ -57,11 +48,11 @@
     border: 2px solid #444;
   }
 
-  &--radio+span::before {
+  &--radio + span::before {
     border-radius: 50%;
   }
 
-  &--radio:checked+span::after {
+  &--radio:checked + span::after {
     content: "";
     position: absolute;
     display: block;
@@ -69,11 +60,11 @@
     left: 12px;
     width: 15px;
     height: 15px;
-    background-color: #62d1ba;
+    background-color: $color-green;
     border-radius: 50%;
   }
 
-  &--checkbox:checked+span::after {
+  &--checkbox:checked + span::after {
     content: "";
     position: absolute;
     display: block;
@@ -93,8 +84,7 @@
   padding: 19px 5px;
   padding-left: 0;
   width: 260px;
-  font-size: 17px;
-  line-height: 18px;
+  @include font(17px, 18px);
   border: none;
   border-bottom: 2px solid #000;
 
@@ -122,8 +112,7 @@
 
 .order-form__conditions {
   margin-bottom: 31px;
-  font-size: 14px;
-  line-height: 16px;
+  @include font(14px, 16px);
 }
 
 .order-form__btn {

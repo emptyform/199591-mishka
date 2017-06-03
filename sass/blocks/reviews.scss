@@ -1,7 +1,5 @@
 .reviews__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
+  @include font(25px, 30px, bold, #000);
 }
 
 .reviews__item {
@@ -11,18 +9,13 @@
 }
 
 .reviews__author {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000;
+  @include font(17px, 24px, bold, #000);
   font-style: normal;
 }
 
 .reviews__author-email {
   margin: 0;
-  line-height: 30px;
-  color: #444;
-  font-weight: normal;
+  @include font(17px, 30px);
 }
 
 .reviews__btn {

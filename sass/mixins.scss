@@ -1,11 +1,10 @@
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-
-  background-color: #fff;
-  width: 320px;
+@mixin font($size, $height, $weight: normal, $color: $font-color) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
 }
+
 
 @mixin border-bottom() {
   border-bottom: 1px solid #ececec;

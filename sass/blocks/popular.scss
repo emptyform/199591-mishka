@@ -1,23 +1,16 @@
 .popular {
-  color: #444;
   margin-bottom: 35px;
 }
 
 .popular__title {
   margin-bottom: 5px;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000;
+  @include font(25px, 30px, bold, #000);
 }
 
 .popular__subtitle {
   margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
+  @include font(17px, 20px, bold, $color-green);
   text-transform: uppercase;
-  color: #63d1bb;
 }
 
 .popular__table {
@@ -39,7 +32,5 @@
   margin: 0;
   padding: 25px 10px;
   text-align: center;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+  @include font(17px, 24px, bold);
 }

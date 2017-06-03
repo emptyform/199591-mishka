@@ -13,15 +13,12 @@
   list-style: none;
 
   a {
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #fff;
+    @include font(19px, 24px, bold, #fff);
     text-decoration: none;
   }
 
   &--interior {
-    background-color: #63d1bb;
+    background-color: $color-green;
   }
 
   &--interior:hover {
