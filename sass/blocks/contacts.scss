@@ -1,0 +1,40 @@
+.contacts {
+  margin-top: 44px;
+}
+
+.contacts__title {
+  @include font(18px, 30px, bold, #000);
+}
+
+.contacts__table {
+  margin-bottom: 40px;
+  border-spacing: 5px 20px;
+}
+
+.contacts__table-col {
+  padding: 5px 0;
+  width: 185px;
+
+  &--adress {
+    padding-right: 40px;
+  }
+}
+
+.contacts__email {
+  color: $font-color;
+  text-decoration: none;
+  border-bottom: 1px solid $color-green;
+}
+
+.contacts__map {
+  margin-left: -30px;
+  height: 457px;
+  width: 320px;
+  background-color: $bg-grey;
+  background-image: url(../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat;
+}
+
+.contacts__btn {
+  margin: 39px auto;
+}

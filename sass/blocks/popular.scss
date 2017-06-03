@@ -1,0 +1,36 @@
+.popular {
+  margin-bottom: 35px;
+}
+
+.popular__title {
+  margin-bottom: 5px;
+  @include font(25px, 30px, bold, #000);
+}
+
+.popular__subtitle {
+  margin-bottom: 20px;
+  @include font(17px, 20px, bold, $color-green);
+  text-transform: uppercase;
+}
+
+.popular__table {
+  width: 100%;
+  margin: 27px auto;
+  border-collapse: collapse;
+}
+
+.popular__table-row {
+  @include border-bottom();
+}
+
+.popular__table-col {
+  padding: 5px 0;
+  padding-right: 25px;
+}
+
+.popular__price {
+  margin: 0;
+  padding: 25px 10px;
+  text-align: center;
+  @include font(17px, 24px, bold);
+}

@@ -1,0 +1,30 @@
+.reviews__title {
+  @include font(25px, 30px, bold, #000);
+}
+
+.reviews__item {
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.reviews__author {
+  @include font(17px, 24px, bold, #000);
+  font-style: normal;
+}
+
+.reviews__author-email {
+  margin: 0;
+  @include font(17px, 30px);
+}
+
+.reviews__btn {
+  margin-bottom: 38px;
+  display: inline-block;
+  vertical-align: top;
+  width: 128px;
+  height: 50px;
+  font-size: 0;
+  background-color: #fff;
+  border: 1px solid #ececec;
+}

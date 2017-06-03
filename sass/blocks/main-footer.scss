@@ -1,0 +1,17 @@
+.main-footer {
+  background-color: $bg-grey;
+}
+
+.main-footer__copyright {
+  display: block;
+  padding: 20px 50px;
+  @include font(19px, 20px, bold, #000);
+  text-decoration: none;
+}
+
+.main-footer__social-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  @include border-bottom();
+}

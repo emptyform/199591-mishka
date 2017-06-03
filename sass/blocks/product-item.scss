@@ -1,0 +1,43 @@
+.product-item__content-wrap {
+  margin-bottom: 30px;
+  padding: 32px 27px;
+  border: 1px solid $border-color;
+}
+
+.product-item__img {
+  display: block;
+  line-height: 0;
+}
+
+.product-item__caption {
+  @include font(17px, 24px, bold, #000);
+  text-decoration: none;
+
+  h2 {
+    font: inherit;
+    margin: 0;
+  }
+}
+
+.product-item__spec {
+  @include font(13px, 30px);
+}
+
+.product-item__price-wrap {
+  display: flex;
+  padding-top: 20px;
+  border-top: 1px solid $border-color;
+}
+
+.product-item__price {
+  @include font(15px, 24px, bold, #000);
+}
+
+.product-item__cart {
+  margin-left: auto;
+  font-size: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ececec;
+}

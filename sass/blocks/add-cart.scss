@@ -1,0 +1,40 @@
+.add-cart {
+  padding-top: 35px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.add-cart__title {
+  padding: 5px 55px;
+  @include font(25px, 30px, bold, #000);
+  text-transform: uppercase;
+}
+
+.add-cart__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.add-cart__radio {
+  display: none;
+
+  & + span {
+    display: block;
+    padding: 18px 10px;
+    width: 58px;
+    text-align: center;
+    @include font(17px, 18px, bold);
+    border: 2px solid $border-color;
+    cursor: pointer;
+  }
+
+  &:checked + span {
+    border-color: $color-green;
+  }
+}
+
+.add-cart__btn {
+  width: 100%;
+  border: none;
+}

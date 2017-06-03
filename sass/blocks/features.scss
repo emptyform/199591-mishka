@@ -1,0 +1,13 @@
+.features {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.features__title {
+  @include font(25px, 30px, bold, #000);
+}
+
+.features__item {
+  padding-top: 60px;
+  @include font(17px, 20px, bold, #000);
+}

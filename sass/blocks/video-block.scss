@@ -1,0 +1,20 @@
+.video-block {
+  margin: 0 auto;
+  margin-bottom: 58px;
+  padding: 25px 34px 33px;
+  width: 190px;
+  border: 1px solid $border-color;
+  @include font(13px, 24px);
+
+  video {
+    margin-left: -34px;
+    background-image: url(../img/video-mobile@1x.jpg);
+  }
+}
+
+.video-block__title {
+  padding-left: 56px;
+  @include font(17px, 24px, bold, #000);
+}
+
+

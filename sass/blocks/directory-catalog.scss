@@ -1,0 +1,40 @@
+.directory-catalog {
+  margin-bottom: 25px;
+}
+
+.directory-catalog__list {
+  padding: 0;
+  margin: 0;
+}
+
+.directory-catalog__item {
+  padding: 30px 30px;
+  padding-right: 150px;
+  list-style: none;
+
+  a {
+    @include font(19px, 24px, bold, #fff);
+    text-decoration: none;
+  }
+
+  &--interior {
+    background-color: $color-green;
+  }
+
+  &--interior:hover {
+    background-color: #59d5bc;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  &--toys:hover {
+    background-color: #46c1ae;
+  }
+
+  a:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+}
