@@ -1,5 +1,6 @@
 .directory-catalog {
   margin-bottom: 25px;
+  background-color: #fafafa;
 }
 
 .directory-catalog__list {
@@ -9,10 +10,12 @@
 
 .directory-catalog__item {
   padding: 30px 30px;
-  padding-right: 150px;
+  padding-right: 100px;
   list-style: none;
 
   a {
+    display: block;
+    width: 175px;
     @include font(19px, 24px, bold, #fff);
     text-decoration: none;
   }
@@ -36,5 +39,62 @@
   a:active {
     color: rgba(255, 255, 255, 0.3);
   }
-
 }
+
+@media (min-width: $tablet) {
+  .directory-catalog__list {
+    display: flex;
+    padding: 0 50px;
+  }
+
+  .directory-catalog__item {
+    flex-grow: 1;
+
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

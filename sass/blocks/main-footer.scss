@@ -2,6 +2,10 @@
   background-color: $bg-grey;
 }
 
+.main-footer__logo {
+  display: none;
+}
+
 .main-footer__copyright {
   display: block;
   padding: 20px 50px;
@@ -15,3 +19,46 @@
   padding: 20px 20px;
   @include border-bottom();
 }
+
+@media (min-width: $tablet) {
+  .main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+
+  .main-footer__social-links {
+    margin-left: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

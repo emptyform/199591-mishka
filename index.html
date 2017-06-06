@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a class="logo">
-          <img class="logo__img" src="img/logo-mobile.svg">
-        </a>
-        <a class="main-header__hamburger" href="#">Открыть меню</a>
-      </div>
+      <a class="main-header__hamburger" href="#">Открыть меню</a>
+      <a class="logo">
+        <img class="logo__img" src="img/logo-mobile.svg">
+      </a>
       <nav class="main-nav"> <!--class="main-nav--open"-->
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -21,14 +20,23 @@
           <li class="main-nav__item">
             <a href="#">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__item--search">
-            <a href="#">Поиск по сайту</a>
+          <li class="main-nav__item">
+            <a href="#">Новые поступления</a>
           </li>
-          <li class="main-nav__item main-nav__item--cart">
-            <a href="#">Корзина: <span class="main-nav__cart-total">пока пуста</span></a>
+          <li class="main-nav__item">
+            <a href="#">Распродажа</a>
           </li>
         </ul>
       </nav>
+      <ul class="main-header__user-list">
+        <li class="main-header__user-item main-header__user-item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-header__user-item main-header__user-item--cart">
+          <a href="#">Корзина: <span class="main-header__cart-total">пока пуста</span></a>
+        </li>
+      </ul>
+      <p class="main-header__text">Бесплатная доставка по России</p>
     </header>
     <main>
       <div class="page-title page-title--main">
@@ -97,14 +105,14 @@
               <p class="reviews__author-email">@misssssiskras</p>
             </cite>
           </blockquote>
-          <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
+          <button class="reviews__control reviews__control--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__control reviews__control--next" type="button">Следующий отзыв</button>
         </div>
-        <a class="btn" href="add-review.html">Написать</a>
+        <a class="btn reviews__btn" href="add-review.html">Написать</a>
       </section>
-      <section class="contacts container">
-        <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__table">
+      <section class="contacts">
+        <h3 class="contacts__title container">Контакты</h3>
+        <table class="contacts__table container">
           <tr class="contacts__table-row">
             <td class="contacts__table-col">e-mail:</td>
             <td class="contacts__table-col">
@@ -113,15 +121,22 @@
           </tr>
           <tr class="contacts__table-row">
             <td class="contacts__table-col">адрес:</td>
-            <td class="contacts__table-col contacts__table-col--adress">г. Санкт-Петербург,  ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
+            <td class="contacts__table-col contacts__table-col--adress">
+              г. Санкт-Петербург, <br>
+              ул. Большая Конюшенная, <br>
+              д. 19/8, офис 101
+            </td>
           </tr>
         </table>
         <div class="contacts__map"></div>
-        <a class="btn contacts__btn" href="feedback-form.html">Напишите нам</a>
+        <a class="btn contacts__btn container" href="feedback-form.html">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
       <div class="container">
+        <a class="main-footer__logo">
+          <img src="img/logo-mobile.svg" alt="logo" width="86" height="36">
+        </a>
         <div class="main-footer__social-links">
           <a class="social-link social-link--instagram" href="#">Мы в Инстаграмме</a>
           <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>

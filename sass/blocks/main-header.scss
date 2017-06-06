@@ -7,29 +7,114 @@
   font-size: 0;
   position: absolute;
   display: block;
-  top: 38px;
-  right: 30px;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
+  top: 25px;
+  right: 28px;
+  width: 32px;
+  height: 30px;
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     display: block;
-    left: 0;
-    width: 20px;
+    top: 5px;
+    left: 5px;
+    width: 22px;
     height: 2px;
+
     background-color: #000;
+    box-shadow: 0 8px 0 0 #000,
+                0 16px 0 0 #000;
+  }
+}
+
+.main-header__text {
+  display: none;
+}
+
+.main-header__user-list {
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 320px;
+  position: relative;
+//  top: 80px;
+  left: 0;
+}
+
+.main-header__user-item {
+  list-style: none;
+  @include border-bottom();
+  padding: 30px 10px;
+  padding-left: 75px;
+  background-color: #fff;
+
+  a {
+    @include font(17px, 24px, bold, #000);
+    text-decoration: none;
   }
 
-  &::before {
-    top: -6px;
+  a[href]:hover {
+    opacity: 0.6;
   }
 
-  &::after {
-    top: 6px;
+  a[href]:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-header__hamburger {
+    display: none;
+    margin: 0;
   }
 
+  .main-header {
+    position: static;
+    padding: 0 50px;
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 668px;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 88px;
+  }
+
+  .main-header__user-list {
+    order: -1;
+    display: flex;
+    position: static;
+  }
+
+  .main-header__user-item {
+
+    padding: 30px 5px;
+    border-bottom: none;
+
+    &--search {
+      display: block;
+      min-height: 10px;
+      width: 85px;
+      border-left: 1px solid #cecece;
+      border-right: 1px solid #cecece;
+      background-color: antiquewhite;
+      a {
+        font-size: 0;
+      }
+    }
+
+    &--cart {
+      padding-left: 60px;
+      width: 265px;
+      text-align: right;
+    }
+  }
+
+  .main-header__text {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 235px;
+    margin-left: auto;
+  }
 }

@@ -11,3 +11,66 @@
   padding-top: 60px;
   @include font(17px, 20px, bold, #000);
 }
+
+
+@media (min-width: $tablet) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .features__title {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__item {
+    margin-right: 24px;
+    width: 310px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features {
+    padding: 0 175px;
+    width: 700px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__item {
+    margin-right: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
