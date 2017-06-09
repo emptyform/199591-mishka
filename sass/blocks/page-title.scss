@@ -1,8 +1,10 @@
 .page-title {
 
+//    @include box();
   h1 {
-    margin: 0;
+    margin: 0 auto;
     padding-top: 75px;
+    width: 260px;
     @include font(27px, 30px, bold, #000);
     text-align: center;
   }
@@ -25,16 +27,16 @@
 
 @media (min-width: $tablet) {
   .page-title {
-    position: relative;
-    margin-top: -88px;
+
     h1 {
-      padding-top: 160px;
+      padding-top: 100px;
+      width: 668px;
       font-size: 43px;
       line-height: 50px;
     }
 
     &--main {
-       min-height: 626px;
+       min-height: 570px;
     }
   }
 }
@@ -42,20 +44,12 @@
 @media (min-width: $desktop) {
   .page-title {
 
-
     h1 {
       font-size: 53px;
       line-height: 57px;
     }
   }
 }
-
-
-
-
-
-
-
 
 
 

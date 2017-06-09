@@ -1,5 +1,9 @@
-.main-footer {
+.main-footer__wrapper {
   background-color: $bg-grey;
+}
+
+.main-footer {
+  @include box();
 }
 
 .main-footer__logo {
@@ -8,7 +12,7 @@
 
 .main-footer__copyright {
   display: block;
-  padding: 20px 50px;
+  padding: 20px 55px;
   @include font(19px, 20px, bold, #000);
   text-decoration: none;
 }
@@ -16,14 +20,13 @@
 .main-footer__social-links {
   display: flex;
   justify-content: center;
-  padding: 20px 20px;
+  padding: 20px 0px;
   @include border-bottom();
 }
 
 @media (min-width: $tablet) {
-  .main-footer .container {
+  .main-footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -33,10 +36,17 @@
 
   .main-footer__social-links {
     margin-left: auto;
+    border: none;
   }
-
 }
 
+@media (min-width: $desktop) {
+
+  .main-footer__social-links {
+    width: 350px;
+    margin-right: 110px;
+  }
+}
 
 
 

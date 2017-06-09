@@ -2,6 +2,10 @@
   margin-top: 44px;
 }
 
+.contacts__data-wrapper {
+  @include box();
+}
+
 .contacts__title {
   @include font(18px, 30px, bold, #000);
 }
@@ -12,19 +16,18 @@
 }
 
 .contacts__table-row {
+    display: flex;
 
+    &:last-child {
+      margin-left: auto;
+    }
 }
 
 .contacts__table-col {
   padding: 15px 0;
-  background-color: bisque;
 
   &:nth-child(1) {
     width: 65px;
-  }
-
-  &--adress {
-    padding-right: 40px;
   }
 }
 
@@ -32,18 +35,28 @@
   color: $font-color;
   text-decoration: none;
   border-bottom: 1px solid $color-green;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
   height: 457px;
-  width: 320px;
+  width: auto;
   background-color: $bg-grey;
   background-image: url(../img/map-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contacts__btn {
   margin: 39px auto;
+  width: 260px;
 }
 
 @media (min-width: $tablet) {
@@ -55,23 +68,17 @@
   .contacts__table tbody {
     display: flex;
     width: 668px;
-  }
-
-  .contacts__table-row {
-    display: flex;
-
-    &:last-child {
-      margin-left: auto;
-    }
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .contacts__table-col {
     padding: 0;
     width: 230px;
-  }
 
-  .contacts__map {
-    width: auto;
+    br:nth-child(2) {
+      display: none;
+    }
   }
 
   .contacts__btn {
@@ -84,49 +91,39 @@
 
   .contacts {
     display: flex;
-//    align-items: flex-start;
-//    align-content: flex-start;
-//    justify-content: flex-start;
-    flex-direction: column;
-    flex-basis: 668px;
     flex-wrap: wrap;
-//    flex-shrink: 0;
     margin-bottom: 40px;
+    @include box();
+  }
+
+  .contacts__data-wrapper {
+    margin: 0;
+    padding-left: 175px;
+    width: 300px;
   }
 
   .contacts__title {
-    width: 300px;
-//    padding-left: 100px;
-//    margin-top: auto;
+    width: 315px;
     font-size: 53px;
     line-height: 57px;
   }
 
-  .contacts__table {
-//    margin-top: auto;
-//    margin-bottom: auto;
-    padding: 0;
-    display: block;
-    width: 300px;
-  }
-
   .contacts__table tbody {
     display: block;
-//    width: 300px;
+    width: 315px;
   }
 
   .contacts__map {
-    order: -1;
-//    margin-top: auto;
-//    margin-bottom: auto;
+    margin: 0;
+    margin-left: auto;
     width: 525px;
     height: 460px;
   }
 
   .contacts__btn {
-    width: 300px;
-//    margin-top: auto;
-//    min-height: 55px;
+    margin-left: 175px;
+    margin-right: auto;
+    margin-top: -55px;
   }
 }
 

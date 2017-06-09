@@ -1,6 +1,7 @@
 .features {
   margin-top: 30px;
   margin-bottom: 50px;
+  @include box();
 }
 
 .features__title {
@@ -31,12 +32,32 @@
     width: 310px;
     font-size: 20px;
     line-height: 22px;
+
+    &--knit {
+      order: 1;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--manufacturer {
+      order: 3;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--present {
+      order: 5;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .features {
-    padding: 0 175px;
+    padding: 0 225px;
     width: 700px;
   }
 

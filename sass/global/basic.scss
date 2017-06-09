@@ -2,30 +2,5 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   @include font(15px, 24px, normal);
   background-color: #fff;
-
-  margin: 0 auto;
-  width: 320px;
-
-  @media (min-width: $tablet) {
-    width: 768px;
-  }
-
-  @media (min-width: 1150px) {
-    width: 1150px;
-  }
 }
 
-.container {
-  padding: 0 30px;
-  width: 260px;
-
-
-  @media (min-width: $tablet) {
-    padding: 0 50px;
-    width: 668px;
-  }
-
-  @media (min-width: 1150px) {
-    width: 1050px;
-  }
-}
