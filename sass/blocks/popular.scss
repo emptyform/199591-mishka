@@ -1,14 +1,6 @@
 .popular {
   margin-bottom: 35px;
   @include box();
-  display: flex;
-  flex-direction: column;
-}
-
-.popular__content {
-  min-height: 720px;
-  display: flex;
-  flex-direction: column;
 }
 
 .popular__title {
@@ -23,8 +15,8 @@
 }
 
 .popular__table {
-  width: 100%;
   margin: 27px auto;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -44,23 +36,12 @@
   @include font(17px, 24px, bold);
 }
 
-.popular__img {
-  margin-top: -465px;
-  margin-bottom: 160px;
-}
 
 @media (min-width: $tablet) {
 
-  .popular {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .popular__content {
-    min-height: auto;
+   .popular__title-wrap {
     display: flex;
-    flex-direction: column;
-    width: 290px;
+    width: 100%;
   }
 
   .popular__title {
@@ -72,16 +53,27 @@
   }
 
   .popular__subtitle {
-    width: 100px;
     margin: 0;
-    padding-bottom: 30px;
     margin-left: auto;
+    padding-bottom: 30px;
+    width: 100px;
     line-height: 17px;
     text-align: center;
     align-self: center;
   }
 
+  .popular__content-wrap {
+    display: flex;
+    width: 668px;
+  }
+
+  .popular__content {
+    margin-bottom: 130px;
+    width: 290px;
+  }
+
   .popular__img {
+    order: 2;
     margin: 0;
     margin-left: auto;
     width: 334px;
@@ -98,8 +90,14 @@
     margin: 0;
   }
 
-  .popular__price {
+  .popular__price-wrap {
+    order: 1;
     margin-top: auto;
+    margin-left: -290px;
+    width: 290px;
+  }
+
+  .popular__price {
     font-size: 20px;
   }
 
@@ -110,6 +108,11 @@
 
 @media (min-width: $desktop) {
 
+  .popular__title-wrap {
+    position: absolute;
+    z-index: 2;
+  }
+
   .popular__subtitle {
     order: -1;
     margin: 0;
@@ -117,20 +120,22 @@
   }
 
   .popular__title {
-    padding: 50px 0;
-    position: relative;
-    z-index: 2;
+    padding: 40px 0;
     width: 595px;
     font-size: 53px;
     line-height: 57px;
   }
 
-  .popular__content {
+  .popular__content-wrap {
     margin-left: 175px;
+    width: 875px;
+  }
+
+  .popular__content {
+    margin-top: 130px;
   }
 
   .popular__img {
-    margin-top: -150px;
     position: relative;
     z-index: 1;
     width: 525px;

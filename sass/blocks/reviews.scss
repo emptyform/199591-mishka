@@ -60,17 +60,28 @@
   }
 
   .reviews__slider {
-    position: relative;
+    display: flex;
+  }
+
+  .reviews__item {
+    width: 668px;
+  }
+
+  .reviews__author {
+    display: block;
+    width: 430px;
   }
 
   .reviews__control {
-    position: absolute;
+    margin-top: auto;
     width: 80px;
-    right: 0px;
-    bottom: 0px;
 
     &--prev {
-      right: 90px;
+      margin-left: -80px;
+    }
+
+    &--next {
+      margin-left: -160px;
     }
   }
 }
@@ -85,7 +96,12 @@
 
   .reviews__slider {
     padding-left: 175px;
+    width: 875px;
+  }
+
+  .reviews__item {
     padding-right: 100px;
+    width: 775px;
   }
 }
 

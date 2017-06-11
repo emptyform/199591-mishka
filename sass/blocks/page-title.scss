@@ -1,9 +1,8 @@
 .page-title {
 
-//    @include box();
   h1 {
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 70px;
     width: 260px;
     @include font(27px, 30px, bold, #000);
     text-align: center;
@@ -19,7 +18,7 @@
   }
 
   &--inner {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     min-height: 175px;
     background-color: $bg-grey;
   }
@@ -29,14 +28,22 @@
   .page-title {
 
     h1 {
-      padding-top: 100px;
+      padding: 0;
       width: 668px;
       font-size: 43px;
       line-height: 50px;
     }
 
     &--main {
-       min-height: 570px;
+      padding-top: 100px;
+      min-height: 570px;
+    }
+
+    &--inner {
+      padding-top: 65px;
+      margin-bottom: 30px;
+      min-height: 100px;
+      background-color: $bg-grey;
     }
   }
 }

@@ -7,34 +7,43 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a class="logo" href="index.html">
-          <img class="logo__img" src="img/logo-mobile.svg">
-        </a>
-        <a class="main-header__hamburger" href="#">Открыть меню</a>
-      </div>
-      <nav class="main-nav"> <!--class="main-nav--open"-->
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
+      <a class="main-header__hamburger" href="#">Открыть меню</a>
+      <a class="main-header__logo" href="index.html">
+        <img class="logo__img" src="img/logo-mobile.svg">
+      </a>
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
             <a>Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item main-nav__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item main-nav__item--cart">
-            <a href="#">Корзина: <span class="main-nav__cart-total">пока пуста</span></a>
+          <li class="main-header__nav-item">
+            <a href="form.html">Вязание на заказ</a>
           </li>
         </ul>
       </nav>
+      <ul class="main-header__user-list">
+        <li class="main-header__user-item main-header__user-item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-header__user-item main-header__user-item--cart">
+          <a href="#">Корзина: <span class="main-header__cart-total">пока пуста</span></a>
+        </li>
+      </ul>
+      <ul class="main-header__stock">
+        <li class="main-header__stock-item">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="main-header__stock-item">
+          <a href="#">Распродажа</a>
+        </li>
+      </ul>
+      <p class="main-header__delivery">Бесплатная доставка по России</p>
     </header>
     <main>
       <div class="page-title page-title--inner">
-        <h1 class="container">Каталог товаров</h1>
+        <h1>Каталог товаров</h1>
       </div>
-      <section class="catalog-products container">
+      <section class="catalog-products">
         <article class="product-item">
           <a class="product-item__img" href="product-bunny.html">
             <img src="img/photo-1-mobile@1x.jpg" alt="bunny" width="260" height="195">
@@ -81,19 +90,22 @@
           </div>
         </article>
       </section>
-      <article class="video-block container">
+      <article class="video-block">
         <h2 class="video-block__title">Процесс производства</h2>
-        <video poster="#" width="258" height="150">
+        <video poster="#" width="260" height="150">
           <source src="#" type="video/mp4">
           <source src="#" type="video/ogg">
           <source src="#" type="video/webm">
         </video>
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn" href="form.html">Сделать заказ</a>
+        <p class="video-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="btn video-block__btn" href="form.html">Сделать заказ</a>
       </article>
     </main>
-    <footer class="main-footer">
-      <div class="container">
+    <footer class="main-footer__wrapper">
+      <div class="main-footer">
+        <a class="main-footer__logo">
+          <img src="img/logo-mobile.svg" alt="logo" width="86" height="36">
+        </a>
         <div class="main-footer__social-links">
           <a class="social-link social-link--instagram" href="#">Мы в Инстаграмме</a>
           <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
@@ -103,7 +115,7 @@
       </div>
     </footer>
     <div class="modal-window">
-      <div class="add-cart container">
+      <div class="add-cart">
         <h2 class="add-cart__title">Добавить в корзину</h2>
         <form class="add-cart__form" method="get" action="#">
           <p class="add-cart__text">Выберите размер:</p>

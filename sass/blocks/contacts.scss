@@ -90,6 +90,7 @@
 @media (min-width: $desktop) {
 
   .contacts {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -109,21 +110,27 @@
   }
 
   .contacts__table tbody {
+    position: relative;
     display: block;
+    padding-bottom: 60px;
     width: 315px;
   }
 
   .contacts__map {
     margin: 0;
+    margin-bottom: 40px;
     margin-left: auto;
     width: 525px;
     height: 460px;
   }
 
   .contacts__btn {
-    margin-left: 175px;
-    margin-right: auto;
-    margin-top: -55px;
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+//    margin-left: 175px;
+//    margin-right: auto;
+//    margin-top: -55px;
   }
 }
 
