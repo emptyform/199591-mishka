@@ -11,7 +11,7 @@
     <header class="main-header">
       <a class="main-header__hamburger" href="#">Открыть меню</a>
       <a class="main-header__logo">
-        <img class="logo__img" src="img/logo-mobile.svg">
+        <img class="logotype" src="img/logo-mobile.svg" alt="logotype">
       </a>
       <nav class="main-header__nav">
         <ul class="main-header__nav-list">
@@ -110,14 +110,16 @@
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__slider">
           <blockquote class="reviews__item">
-            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author">
-              Анастасия Красильникова
-              <p class="reviews__author-email">@misssssiskras</p>
-            </cite>
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__bottom-wrap">
+              <p class="reviews__author">
+                <cite>Анастасия Красильникова</cite>
+                <cite class="reviews__author-email">@misssssiskras</cite>
+              </p>
+              <button class="reviews__control reviews__control--prev" type="button">Предыдущий отзыв</button>
+              <button class="reviews__control reviews__control--next" type="button">Следующий отзыв</button>
+            </div>
           </blockquote>
-          <button class="reviews__control reviews__control--prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__control reviews__control--next" type="button">Следующий отзыв</button>
         </div>
         <a class="btn reviews__btn" href="add-review.html">Написать</a>
       </section>
