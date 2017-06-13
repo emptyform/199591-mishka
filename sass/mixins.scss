@@ -21,12 +21,6 @@
   }
 }
 
-
-@mixin border-bottom() {
-  border-bottom: 1px solid #ececec;
-}
-
-
 @mixin clearfix() {
   &::after {
     content: "";
@@ -34,4 +28,8 @@
     display: table;
     clear: both;
   }
+}
+
+@mixin border-bottom() {
+  border-bottom: 1px solid #ececec;
 }
