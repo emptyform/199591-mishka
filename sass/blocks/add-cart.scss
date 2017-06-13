@@ -1,8 +1,14 @@
-.add-cart {
-  padding-top: 35px;
-  padding-bottom: 45px;
+.modal-window {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 30px 46px;
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
   text-align: center;
-}
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  }
 
 .add-cart__title {
   padding: 5px 55px;
@@ -37,4 +43,17 @@
 .add-cart__btn {
   width: 100%;
   border: none;
+}
+
+@media (min-width: $tablet) {
+
+  .modal-window {
+    box-sizing: border-box;
+    padding: 46px 109px;
+    width: 565px;
+  }
+
+  .add-cart__title {
+    padding: 0;
+  }
 }

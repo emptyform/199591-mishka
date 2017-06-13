@@ -1,13 +1,6 @@
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   @include font(15px, 24px, normal);
-
   background-color: #fff;
-  width: 320px;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 30px;
-  width: 260px;
-}

@@ -2,21 +2,32 @@
   margin-top: 44px;
 }
 
+.contacts__data-wrapper {
+  @include box();
+}
+
 .contacts__title {
   @include font(18px, 30px, bold, #000);
 }
 
 .contacts__table {
   margin-bottom: 40px;
-  border-spacing: 5px 20px;
+  display: block;
+}
+
+.contacts__table-row {
+    display: flex;
+
+    &:last-child {
+      margin-left: auto;
+    }
 }
 
 .contacts__table-col {
-  padding: 5px 0;
-  width: 185px;
+  padding: 15px 0;
 
-  &--adress {
-    padding-right: 40px;
+  &:nth-child(1) {
+    width: 65px;
   }
 }
 
@@ -24,17 +35,98 @@
   color: $font-color;
   text-decoration: none;
   border-bottom: 1px solid $color-green;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
-  margin-left: -30px;
   height: 457px;
-  width: 320px;
+  width: auto;
   background-color: $bg-grey;
   background-image: url(../img/map-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contacts__btn {
   margin: 39px auto;
+  width: 260px;
+}
+
+@media (min-width: $tablet) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__table-col {
+    padding: 0;
+    width: 230px;
+
+    br:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .contacts__btn {
+    width: 230px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @include box();
+  }
+
+  .contacts__data-wrapper {
+    margin: 0;
+    padding-left: 175px;
+    width: 300px;
+  }
+
+  .contacts__title {
+    width: 315px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__table tbody {
+    position: relative;
+    display: block;
+    padding-bottom: 60px;
+    width: 315px;
+  }
+
+  .contacts__map {
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    width: 525px;
+    height: 460px;
+  }
+
+  .contacts__btn {
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+  }
 }

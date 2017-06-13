@@ -1,5 +1,6 @@
 .popular {
   margin-bottom: 35px;
+  @include box();
 }
 
 .popular__title {
@@ -14,8 +15,8 @@
 }
 
 .popular__table {
-  width: 100%;
   margin: 27px auto;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -29,8 +30,148 @@
 }
 
 .popular__price {
-  margin: 0;
+  margin-top: auto;
   padding: 25px 10px;
   text-align: center;
   @include font(17px, 24px, bold);
 }
+
+
+@media (min-width: $tablet) {
+
+   .popular__title-wrap {
+    display: flex;
+    width: 100%;
+  }
+
+  .popular__title {
+    margin: 0;
+    padding-bottom: 30px;
+    width: 508px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .popular__subtitle {
+    margin: 0;
+    margin-left: auto;
+    padding-bottom: 30px;
+    width: 100px;
+    line-height: 17px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .popular__content-wrap {
+    width: 668px;
+    @include clearfix();
+  }
+
+  .popular__content {
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    margin: 0;
+  }
+
+  .popular__img {
+    float: right;
+    width: 334px;
+    height: 405px;
+  }
+
+  .popular__text {
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular__price-wrap {
+    display: inline-block;
+    width: 290px;
+    vertical-align: bottom;
+  }
+
+  .popular__price {
+    font-size: 20px;
+  }
+
+  .popular__btn {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .popular__title-wrap {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .popular__subtitle {
+    order: -1;
+    margin: 0;
+    padding: 10px 36px;
+  }
+
+  .popular__title {
+    padding: 40px 0;
+    width: 595px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular__content-wrap {
+    margin-left: 175px;
+    width: 875px;
+  }
+
+  .popular__content {
+    margin-top: 130px;
+  }
+
+  .popular__img {
+    position: relative;
+    z-index: 1;
+    width: 525px;
+    height: 637px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,35 +1,250 @@
 .main-header {
   position: relative;
-  @include border-bottom();
+  margin: 0 auto;
+  width: 320px;
 }
 
 .main-header__hamburger {
   font-size: 0;
   position: absolute;
   display: block;
-  top: 38px;
-  right: 30px;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
+  top: 25px;
+  right: 28px;
+  width: 32px;
+  height: 30px;
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     display: block;
-    left: 0;
-    width: 20px;
+    top: 5px;
+    left: 5px;
+    width: 22px;
     height: 2px;
+
     background-color: #000;
+    box-shadow: 0 8px 0 0 #000,
+                0 16px 0 0 #000;
+  }
+}
+
+.main-header__stock,
+.main-header__delivery {
+  display: none;
+}
+
+.main-header__logo {
+  display: block;
+  padding: 22px 10px;
+  line-height: 0;
+  width: 300px;
+  text-align: center;
+  @include border-bottom();
+}
+
+.main-header__nav-list,
+.main-header__user-list {
+  padding: 0;
+  margin: 0;
+  width: 320px;
+}
+
+.main-header__nav-item,
+.main-header__user-item {
+  padding: 30px 10px;
+  padding-left: 75px;
+  background-color: #fff;
+  @include border-bottom();
+  list-style: none;
+
+  a {
+    @include font(17px, 24px, bold, #000);
+    text-decoration: none;
   }
 
-  &::before {
-    top: -6px;
+  a[href]:hover {
+    opacity: 0.6;
   }
 
-  &::after {
-    top: 6px;
+  a[href]:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-header__hamburger {
+    display: none;
+    margin: 0;
+  }
+
+  .main-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .main-header__logo {
+    padding: 22px 0px;
+    margin-left: auto;
+    width: 334px;
+    border: none;
+  }
+
+  .main-header__nav {
+    order: 2;
+    border-top: 1px solid #ececec;
+    background-color: #fafafa;
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .main-header__nav-list {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .main-header__nav-item {
+    padding: 20px 0;
+    padding-right: 30px;
+    width: 145px;
+    background-color: #fafafa;
+    border: none;
+
+    a {
+      font-size: 15px;
+    }
+  }
+
+  .main-header__user-list {
+    order: 1;
+    display: flex;
+    width: 334px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-header__user-item {
+    padding: 22px 0px;
+    border: none;
+    background-color: #fff;
+
+    &--search {
+      display: block;
+      width: 85px;
+      border-left: 1px solid #cecece;
+      border-right: 1px solid #cecece;
+
+      a {
+        font-size: 0;
+      }
+    }
+
+    &--cart {
+      padding-left: 60px;
+      width: 265px;
+      text-align: right;
+    }
+  }
+
+  .main-header__delivery {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    padding: 20px 0;
+    order: 3;
+    text-align: center;
+    align-self: flex-start;
+    width: 50%;
+    background-color: #fafafa;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .main-header__nav {
+    order: -1;
+    width: auto;
+    border: none;
+    padding-left: 50px;
+    background-color: #fff;
+  }
+
+  .main-header__nav-item {
+    padding: 22px 0;
+    padding-right: 30px;
+    width: 188px;
+    background-color: #fff;
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  .main-header__logo {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .main-header__user-list {
+    order: 1;
+    display: flex;
+    width: 334px;
+    padding-right: 50px;
+    margin-left: 100px;
+  }
+
+  .main-header__stock {
+    display: flex;
+    order: 2;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ececec;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .main-header__stock-item {
+    margin-left: auto;
+    padding: 20px 0;
+    padding-right: 30px;
+    width: 175px;
+    background-color: #fafafa;
+    border: none;
+    list-style: none;
+
+    a {
+      @include font(15px, 24px, bold, #000);
+      text-decoration: none;
+    }
+
+    a[href]:hover {
+      opacity: 0.6;
+    }
+
+    a[href]:active {
+      opacity: 0.3;
+    }
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

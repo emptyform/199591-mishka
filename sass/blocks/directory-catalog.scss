@@ -1,5 +1,6 @@
 .directory-catalog {
   margin-bottom: 25px;
+  background-color: #fafafa;
 }
 
 .directory-catalog__list {
@@ -8,11 +9,15 @@
 }
 
 .directory-catalog__item {
+  margin: 0 auto;
   padding: 30px 30px;
-  padding-right: 150px;
+  padding-right: 100px;
+  width: 190px;
   list-style: none;
 
   a {
+    display: block;
+    width: 175px;
     @include font(19px, 24px, bold, #fff);
     text-decoration: none;
   }
@@ -36,5 +41,68 @@
   a:active {
     color: rgba(255, 255, 255, 0.3);
   }
-
 }
+
+@media (min-width: $tablet) {
+  .directory-catalog__list {
+    display: flex;
+    @include box();
+  }
+
+  .directory-catalog__item {
+    width: 204px;
+
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .directory-catalog__item {
+    width: 395px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
