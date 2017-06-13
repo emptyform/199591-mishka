@@ -13,17 +13,20 @@
 }
 
 .reviews__author {
-  @include font(17px, 24px, bold, #000);
-  font-style: normal;
-}
-
-.reviews__author-email {
   margin: 0;
-  @include font(17px, 30px);
+
+  cite{
+    @include font(17px, 24px, bold, #000);
+    font-style: normal;
+  }
+
+  .reviews__author-email {
+    margin: 0;
+    @include font(17px, 30px);
+  }
 }
 
 .reviews__control {
-  margin-bottom: 38px;
   display: inline-block;
   vertical-align: top;
   width: 128px;
@@ -61,27 +64,24 @@
 
   .reviews__slider {
     display: flex;
+    width: 668px;
   }
 
-  .reviews__item {
-    width: 668px;
+  .reviews__bottom-wrap {
+    display: flex;
+    align-items: center;
   }
 
   .reviews__author {
     display: block;
-    width: 430px;
+    width: 334px;
   }
 
-  .reviews__control {
-    margin-top: auto;
+  .reviews__control{
     width: 80px;
 
-    &--prev {
-      margin-left: -80px;
-    }
-
-    &--next {
-      margin-left: -160px;
+    &--prev{
+      margin-left: auto;
     }
   }
 }
@@ -99,9 +99,8 @@
     width: 875px;
   }
 
-  .reviews__item {
+  .reviews__text {
     padding-right: 100px;
-    width: 775px;
   }
 }
 

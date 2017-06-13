@@ -10,7 +10,7 @@
     <header class="main-header">
       <a class="main-header__hamburger" href="#">Открыть меню</a>
       <a class="main-header__logo" href="index.html">
-        <img class="logo__img" src="img/logo-mobile.svg">
+        <img class="logotype" src="img/logo-mobile.svg"  alt="logotype">
       </a>
       <nav class="main-header__nav">
         <ul class="main-header__nav-list">
@@ -47,8 +47,8 @@
       <form class="order-form" method="post" action="#">
         <p class="order-form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__block">
-          <div class="order-form__block-wrap">
-            <legend class="order-form__caption">Тип</legend>
+          <legend class="order-form__caption">Тип</legend>
+          <div class="order-form__label-wrap">
             <label class="order-form__label">
               <input class="order-form__filter order-form__filter--radio" type="radio" name="type" value="accessory" checked>
               <span>Аксессуар для интерьера</span>
@@ -59,9 +59,10 @@
             </label>
           </div>
         </fieldset>
+        <div class="order-form__block-wrap">
         <fieldset class="order-form__block">
-          <div class="order-form__block-wrap">
-            <legend class="order-form__caption">Цвет</legend>
+          <legend class="order-form__caption">Цвет</legend>
+          <div class="order-form__label-wrap">
             <label class="order-form__label order-form__label--color">
               <input class="order-form__filter order-form__filter--checkbox" type="checkbox" name="color" value="white" checked>
               <span>Белый</span>
@@ -88,9 +89,10 @@
             </label>
           </div>
         </fieldset>
+        </div>
         <fieldset class="order-form__block">
-          <div class="order-form__block-wrap">
-            <legend class="order-form__caption">ФИО</legend>
+          <legend class="order-form__caption">ФИО</legend>
+          <div class="order-form__label-wrap">
             <label class="order-form__label order-form__label--name">
               Имя:
               <input class="order-form__input" type="text" name="user-name" placeholder="Введите ваше имя*" required>
@@ -105,27 +107,31 @@
             </label>
           </div>
         </fieldset>
+        <div class="order-form__block-wrap">
         <fieldset class="order-form__block">
-          <div class="order-form__block-wrap">
-            <legend class="order-form__caption order-form__caption--phone">Тел</legend>
+          <legend class="order-form__caption order-form__caption--phone">Тел</legend>
+          <div class="order-form__label-wrap">
             <label class="order-form__label">
-              <input class="order-form__input order-form__input--phone" type="tel" name="user-phone" placeholder="+7 XXX XX XX*" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              <input class="order-form__input order-form__input--phone" type="tel" name="user-phone" placeholder="+7 XXX XX XX*" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </label>
           </div>
         </fieldset>
+        </div>
+        <div class="order-form__block-wrap">
         <fieldset class="order-form__block">
-          <div class="order-form__block-wrap">
-            <legend class="order-form__caption order-form__caption--email">E-mail</legend>
+          <legend class="order-form__caption order-form__caption--email">E-mail</legend>
+          <div class="order-form__label-wrap">
             <label class="order-form__label">
               <input class="order-form__input order-form__input--email" type="email" name="user-email" placeholder="Ваш Email*" required>
             </label>
           </div>
         </fieldset>
+          </div>
         <fieldset class="order-form__block">
-          <div class="order-form__block-wrap">
-            <legend class="order-form__caption">Доп</legend>
+          <legend class="order-form__caption">Доп</legend>
+          <div class="order-form__label-wrap">
             <label class="order-form__label">
-              <textarea class="order-form__input order-form__input--textarea" type="tel" name="user-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order-form__input order-form__input--textarea" name="user-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </div>
         </fieldset>

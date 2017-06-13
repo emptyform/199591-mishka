@@ -13,19 +13,7 @@
   margin-top: 0;
   margin-bottom: 7px;
   border: none;
-
-  &::after {
-    content: "";
-    display: block;
-    position:absolute;
-    z-index: 1;
-
-    top: 24px;
-    left: 0;
-    width: 260px;
-    height: 1px;
-    background-color: $color-green;
-  }
+  border-top: 1px solid $color-green;
 }
 
 .order-form__caption {
@@ -209,50 +197,42 @@
     @include font(17px, 30px);
   }
 
-  .order-form__block {
-    margin-bottom: 0;
-    border: none;
-    &::after {
-      display: none;
-    }
-
-    &:nth-of-type(2),
-    &:nth-of-type(4),
-    &:nth-of-type(5) {
-      background-color: $bg-grey;
-    }
+  .order-form__block-wrap {
+    background-color: $bg-grey;
   }
 
-  .order-form__block-wrap {
+  .order-form__block {
     @include box();
+    border: none;
+  }
+
+  .order-form__label-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
   }
 
   .order-form__caption {
-    width: 80px;
+
+    float: left;
+    display: inline-block;
+    @include clearfix();
+    margin-left: 50px;
+    padding-top: 30px;
+
+    width: 167px;
     background-color: transparent;
   }
 
   .order-form__label {
     display: flex;
     align-items: baseline;
-    margin-left: 167px;
     box-sizing: border-box;
     width: 485px;
     font-size: 19px;
 
-    &:first-of-type {
-      margin-left: 87px;
-    }
-
     &--color {
-      width: 230px;
-
-      &:nth-of-type(2n) {
-        margin-left: 0;
-      }
+      width: 200px;
     }
   }
 
@@ -270,6 +250,7 @@
 
   .order-form__btn-wrap {
     @include box();
+    margin-top: 30px;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -283,7 +264,6 @@
   .order-form__btn {
     width: 230px;
   }
-
 }
 
 @media (min-width: $desktop) {
@@ -298,25 +278,14 @@
   }
 
   .order-form__label {
-    margin-left: 175px;
     width: 700px;
 
     &--color {
-      margin-left: 0;
       width: 220px;
-
-      &:nth-of-type(3n+1) {
-        margin-left: 175px;
-      }
-    }
-
-    &:first-of-type {
-      margin-left: 0px;
     }
   }
 
   .order-form__btn-wrap {
     width: 700px;
   }
-
 }

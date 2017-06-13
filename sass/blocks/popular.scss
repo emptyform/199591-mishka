@@ -63,19 +63,19 @@
   }
 
   .popular__content-wrap {
-    display: flex;
     width: 668px;
+    @include clearfix();
   }
 
   .popular__content {
-    margin-bottom: 130px;
+    display: inline-block;
+    vertical-align: top;
     width: 290px;
+    margin: 0;
   }
 
   .popular__img {
-    order: 2;
-    margin: 0;
-    margin-left: auto;
+    float: right;
     width: 334px;
     height: 405px;
   }
@@ -86,15 +86,10 @@
     line-height: 30px;
   }
 
-  .popular__table {
-    margin: 0;
-  }
-
   .popular__price-wrap {
-    order: 1;
-    margin-top: auto;
-    margin-left: -290px;
+    display: inline-block;
     width: 290px;
+    vertical-align: bottom;
   }
 
   .popular__price {
