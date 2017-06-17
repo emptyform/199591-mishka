@@ -11,10 +11,26 @@
 }
 
 .main-footer__copyright {
-  display: block;
-  padding: 20px 55px;
+  display: flex;
+  align-content: center;
+  margin: 0;
+  padding: 9px 35px;
   @include font(19px, 20px, bold, #000);
+  text-align: left;
   text-decoration: none;
+
+  svg {
+    padding-left: 30px;
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__social-links {
@@ -28,6 +44,7 @@
   .main-footer {
     display: flex;
     align-items: center;
+    padding: 27px 0;
   }
 
   .main-footer__logo {
@@ -36,7 +53,16 @@
 
   .main-footer__social-links {
     margin-left: auto;
+    margin-right: 55px;
+    align-self: flex-end;
     border: none;
+  }
+
+  .main-footer__copyright {
+    padding: 0;
+    padding-top: 15px;
+    width: 190px;
+    text-align: right;
   }
 }
 
@@ -44,7 +70,7 @@
 
   .main-footer__social-links {
     width: 350px;
-    margin-right: 110px;
+    margin-right: 165px;
   }
 }
 

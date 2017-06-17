@@ -1,5 +1,5 @@
 .contacts {
-  margin-top: 44px;
+  margin-top: 36px;
 }
 
 .contacts__data-wrapper {
@@ -11,23 +11,25 @@
 }
 
 .contacts__table {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   display: block;
 }
 
 .contacts__table-row {
-    display: flex;
+  display: flex;
+  padding-bottom: 15px;
 
-    &:last-child {
-      margin-left: auto;
-    }
+  &:last-child {
+   margin-left: auto;
+  }
 }
 
 .contacts__table-col {
-  padding: 15px 0;
+  padding: 10px 0;
 
   &:nth-child(1) {
     width: 65px;
+    padding-right: 10px;
   }
 }
 
@@ -59,10 +61,42 @@
   width: 260px;
 }
 
+@media (min-width: 260px) and (min-resolution: 144dpi),
+  (min-width: 260px) and (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url(/img/map-mobile@2x.jpg);
+      background-size: 260px 457px;
+    }
+}
+
 @media (min-width: $tablet) {
+  .contacts {
+    margin-top: 62px;
+  }
+
   .contacts__title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 8px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 2px;
+      width: 70px;
+      height: 82px;
+      background-image: url(/img/icon-flag.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right top;
+    }
+  }
+
+  .contacts__table {
+    margin-bottom: 40px;
   }
 
   .contacts__table tbody {
@@ -70,6 +104,10 @@
     width: 668px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .contacts__table-row:nth-child(2) {
+    margin-left: 30px;
   }
 
   .contacts__table-col {
@@ -81,20 +119,34 @@
     }
   }
 
+  .contacts__map {
+    background-color: $bg-grey;
+    background-image: url(/img/map-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .contacts__btn {
+    margin: 55px auto;
     width: 230px;
   }
 }
 
+@media (min-width: $tablet) and (min-resolution: 144dpi),
+  (min-width: $tablet) and (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url(/img/map-tablet@2x.jpg);
+      background-size: 768px 457px;
+    }
+}
 
 @media (min-width: $desktop) {
 
   .contacts {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
     @include box();
+    margin-bottom: 105px;
   }
 
   .contacts__data-wrapper {
@@ -104,29 +156,52 @@
   }
 
   .contacts__title {
+    margin-bottom: 50px;
+    padding-top: 92px;
+    padding-bottom: 0;
     width: 315px;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      bottom: -15px;
+      left: -135px;
+    }
   }
 
   .contacts__table tbody {
-    position: relative;
     display: block;
     padding-bottom: 60px;
     width: 315px;
   }
 
+  .contacts__table-row:nth-child(2) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
   .contacts__map {
     margin: 0;
-    margin-bottom: 40px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
     width: 525px;
     height: 460px;
+    background-image: url(/img/map-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .contacts__btn {
     position: absolute;
-    bottom: 0;
+    bottom: -54px;
     left: 225px;
   }
+}
+
+@media (min-width: $desktop) and (min-resolution: 144dpi),
+  (min-width: $desktop) and (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url(/img/map-desktop@2x.jpg);
+      background-size: 525px 460px;
+    }
 }

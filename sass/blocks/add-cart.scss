@@ -1,14 +1,20 @@
 .modal-window {
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 30px 30px 46px;
-    width: 320px;
-    height: auto;
-    background-color: #fff;
-    border: 1px solid #c6c6c6;
+  display: none;
+  position: fixed;
+  z-index: 20;
+	top: 25%;
+	left: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 30px 46px;
+  width: 320px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
   text-align: center;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
-  }
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  transform: translateX(-50%);
+}
 
 .add-cart__title {
   padding: 5px 55px;
@@ -43,6 +49,10 @@
 .add-cart__btn {
   width: 100%;
   border: none;
+}
+
+.modal-window--show {
+  display: block;
 }
 
 @media (min-width: $tablet) {

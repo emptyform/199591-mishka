@@ -1,8 +1,25 @@
 .social-link {
   display: block;
-  margin-right: 10px;
+  padding: 10px 10px;
   width: 40px;
-  height: 40px;
-  background-color: #cecece;
+  text-align: center;
   font-size: 0;
+
+  &--fb {
+    padding-top: 0;
+  }
+
+  &:hover svg {
+    fill: #63d1bb;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .social-link {
+
+  }
 }
