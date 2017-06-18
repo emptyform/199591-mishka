@@ -27,7 +27,7 @@
 @media (min-width: 260px) and (min-resolution: 144dpi),
   (min-width: 260px) and (min-resolution: 1.5dppx) {
     .page-title--main {
-      background-image: url(../../img/hero-mobile@2x.jpg);
+      background-image: url(../img/hero-mobile@2x.jpg);
       background-size: 575px auto;
     }
 }
@@ -49,10 +49,15 @@
     }
 
     &--inner {
-      padding-top: 65px;
-      margin-bottom: 30px;
-      min-height: 100px;
+      padding-top: 34px;
+
+      margin-bottom: 63px;
+      min-height: 140px;
       background-color: $bg-grey;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: auto 22px;
     }
   }
 }
@@ -63,6 +68,13 @@
     h1 {
       font-size: 53px;
       line-height: 57px;
+    }
+
+    &--inner {
+      padding-top: 36px;
+      margin-bottom: 103px;
+      min-height: 180px;
+      background-size: auto 35px;
     }
   }
 }

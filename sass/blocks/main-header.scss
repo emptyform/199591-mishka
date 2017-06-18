@@ -222,13 +222,17 @@
 
   .main-header__nav {
     order: 2;
-    border-top: 1px solid #ececec;
-    background-color: #fafafa;
-    width: 50%;
     display: flex;
     margin-left: auto;
     margin-right: 0;
+    width: 50%;
     text-align: right;
+    background-color: #fafafa;
+    border-top: 1px solid #ececec;
+
+    &--inner {
+      background-color: $bg-grey;
+    }
   }
 
   .main-header__nav-list {
@@ -242,7 +246,7 @@
     padding: 18px 0;
     padding-right: 30px;
     width: 145px;
-    background-color: #fafafa;
+    background-color: transparent;
     border: none;
 
     a {
@@ -299,6 +303,10 @@
     background-color: #fafafa;
     border-top: 1px solid #ececec;
 
+    &--inner {
+      background-color: $bg-grey;
+    }
+
     p {
       margin: 0;
       padding-left: 104px;
@@ -325,7 +333,6 @@
     padding-left: 35px;
     width: 180px;
     text-align: left;
-    background-color: #fff;
 
     a {
       font-size: 17px;
@@ -365,13 +372,17 @@
     width: 50%;
     background-color: #fafafa;
     border-top: 1px solid #ececec;
+
+    &--inner {
+      background-color: $bg-grey;
+    }
   }
 
   .main-header__stock-item {
     padding: 18px 30px;
-    background-color: #fafafa;
     border: none;
     list-style: none;
+    background-color: transparent;
 
     &:first-child {
       margin-left: auto;

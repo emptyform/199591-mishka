@@ -39,7 +39,7 @@
 
     &::after {
       opacity: 0.5;
-      background-image: url(../../img/icon-interior.svg);
+      background-image: url(../img/icon-interior.svg);
       background-repeat: no-repeat;
       background-position: center center;
     }
@@ -57,7 +57,7 @@
     background-color: #56c3b2;
     &::after {
       opacity: 0.5;
-      background-image: url(../../img/icon-toy.svg);
+      background-image: url(../img/icon-toy.svg);
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -93,7 +93,7 @@
       bottom: 0;
       height: 14px;
       width: 100%;
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-size: auto 23px;
     }
   }

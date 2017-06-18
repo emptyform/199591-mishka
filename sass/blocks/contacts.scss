@@ -64,7 +64,7 @@
 @media (min-width: 260px) and (min-resolution: 144dpi),
   (min-width: 260px) and (min-resolution: 1.5dppx) {
     .contacts__map {
-      background-image: url(/img/map-mobile@2x.jpg);
+      background-image: url(../img/map-mobile@2x.jpg);
       background-size: 260px 457px;
     }
 }
@@ -88,7 +88,7 @@
       right: 2px;
       width: 70px;
       height: 82px;
-      background-image: url(/img/icon-flag.svg);
+      background-image: url(../img/icon-flag.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: right top;
@@ -121,7 +121,7 @@
 
   .contacts__map {
     background-color: $bg-grey;
-    background-image: url(/img/map-tablet@1x.jpg);
+    background-image: url(../img/map-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -135,7 +135,7 @@
 @media (min-width: $tablet) and (min-resolution: 144dpi),
   (min-width: $tablet) and (min-resolution: 1.5dppx) {
     .contacts__map {
-      background-image: url(/img/map-tablet@2x.jpg);
+      background-image: url(../img/map-tablet@2x.jpg);
       background-size: 768px 457px;
     }
 }
@@ -186,7 +186,7 @@
     margin-top: 72px;
     width: 525px;
     height: 460px;
-    background-image: url(/img/map-desktop@1x.jpg);
+    background-image: url(../img/map-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -201,7 +201,7 @@
 @media (min-width: $desktop) and (min-resolution: 144dpi),
   (min-width: $desktop) and (min-resolution: 1.5dppx) {
     .contacts__map {
-      background-image: url(/img/map-desktop@2x.jpg);
+      background-image: url(../img/map-desktop@2x.jpg);
       background-size: 525px 460px;
     }
 }

@@ -4,24 +4,21 @@
 
 .order-form__desc {
   @include font(13px, 24px);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .order-form__block {
-  position: relative;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
   border: none;
   border-top: 1px solid $color-green;
 }
 
 .order-form__caption {
-  position: relative;
-  z-index: 3;
-  padding: 10px 20px;
+  padding: 5px 20px;
   padding-left: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   @include font(17px, 17px, bold, $color-green);
   background-color: #fff;
   text-transform: uppercase;
@@ -34,11 +31,12 @@
 
 .order-form__label {
   display: block;
+  position: relative;
   margin: 0;
   @include font(17px, 18px, bold, #000);
 
   &--color {
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 19px;
 
     &:last-child {
@@ -48,11 +46,23 @@
 
   &--name {
     padding-top: 5px;
+    margin-top: 5px;
     margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  svg {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    fill: #cccccc;
+  }
+
+  &:hover svg {
+    fill: #63d1bb;
   }
 }
 
@@ -138,7 +148,8 @@
 
   &--phone,
   &--email {
-    padding: 14px 0;
+    padding: 15px 0;
+    padding-right: 30px;
   }
 
   &:hover {
@@ -150,6 +161,7 @@
   }
 
   &--textarea {
+    margin-top: 8px;
     padding-left: 15px;
     border: 2px solid #000;
   }
@@ -172,8 +184,8 @@
 }
 
 .order-form__conditions {
-  margin-top: 0;
-  margin-bottom: 27px;
+  margin-top: -15px;
+  margin-bottom: 30px;
   @include font(14px, 16px);
 }
 
@@ -194,16 +206,25 @@
 
   .order-form__desc {
     @include box();
+    margin-bottom: 44px;
     @include font(17px, 30px);
   }
 
   .order-form__block-wrap {
     background-color: $bg-grey;
+    padding-top: 38px;
+    padding-bottom: 1px;
   }
 
   .order-form__block {
     @include box();
     border: none;
+    margin-bottom: 38px;
+
+    &--name {
+      margin-top: 38px;
+      padding-bottom: 10px;
+    }
   }
 
   .order-form__label-wrap {
@@ -213,55 +234,125 @@
   }
 
   .order-form__caption {
-
     float: left;
     display: inline-block;
     @include clearfix();
-    margin-left: 50px;
     padding-top: 30px;
-
     width: 167px;
     background-color: transparent;
+
+    &--email {
+      padding-top: 3px;
+    }
+
+    &--textarea {
+      margin-top: 35px;
+    }
   }
 
   .order-form__label {
     display: flex;
     align-items: baseline;
     box-sizing: border-box;
-    width: 485px;
+    width: 500px;
     font-size: 19px;
 
     &--color {
+      margin: 0;
+      margin-right: 62px;
       width: 200px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    &--name {
+      padding-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      top: 22px;
+      right: 25px;
+    }
+
+    .svg-email {
+      top: -2px;
+      right: 20px;
     }
   }
 
+  .order-form__filter {
+
+  & + span {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 80px;
+    width: 350px;
+  }
+
+  & + span::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  &--radio:checked + span::after {
+    left: 17px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--checkbox:checked + span::after {
+    top: 26px;
+    left: 13px;
+    width: 27px;
+    height: 14px;
+  }
+}
+
   .order-form__input {
-    margin-left: 20px;
+    margin-left: 25px;
+    padding-left: 20px;
     width: 100%;
     font-size: 19px;
 
-    &--phone,
-    &--email,
+    &--phone {
+      margin: 0;
+      margin-top: 10px;
+    }
+
+    &--email {
+      margin: 0;
+      padding-top: 0px;
+      margin-bottom: 10px;
+    }
+
     &--textarea {
       margin: 0;
+      margin-top: 50px;
     }
   }
 
   .order-form__btn-wrap {
     @include box();
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
+    align-items: baseline;
     flex-direction: row-reverse;
   }
 
   .order-form__conditions {
+    margin: 0;
     margin-left: auto;
+    text-align: right;
     @include font(17px, 30px);
     width: 334px;
   }
 
   .order-form__btn {
+    margin-bottom: 0;
     width: 230px;
   }
 }
@@ -281,11 +372,26 @@
     width: 700px;
 
     &--color {
+      margin: 0;
+      margin-right: 42px;
       width: 220px;
+
+      &:nth-child(2n) {
+        margin-right: 42px;
+      }
+    }
+
+    svg {
+      right: 0;
+    }
+
+    .svg-email {
+      right: 0;
     }
   }
 
   .order-form__btn-wrap {
+    margin-top: 45px;
     width: 700px;
   }
 }
