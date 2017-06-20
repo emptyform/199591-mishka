@@ -11,10 +11,25 @@
 }
 
 .main-footer__copyright {
-  display: block;
-  padding: 20px 55px;
+  display: flex;
+  align-items: center;
+  padding: 5px 35px 20px;
   @include font(19px, 20px, bold, #000);
+  text-align: left;
   text-decoration: none;
+
+  svg {
+    padding-left: 35px;
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__social-links {
@@ -28,15 +43,34 @@
   .main-footer {
     display: flex;
     align-items: center;
+    padding: 25px 0;
   }
 
   .main-footer__logo {
     display: block;
+
+    &:hover {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-footer__social-links {
     margin-left: auto;
+    margin-right: 55px;
+    padding-bottom: 0;
+    padding-top: 30px;
     border: none;
+  }
+
+  .main-footer__copyright {
+    padding: 0;
+    padding-top: 10px;
+    width: 190px;
+    text-align: right;
   }
 }
 
@@ -44,7 +78,11 @@
 
   .main-footer__social-links {
     width: 350px;
-    margin-right: 110px;
+    margin-right: 165px;
+  }
+
+  .main-footer__copyright {
+    padding-top: 0px;
   }
 }
 
