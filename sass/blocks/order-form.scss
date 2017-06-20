@@ -201,7 +201,7 @@
   .order-form {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: auto;
   }
 
   .order-form__desc {
@@ -277,7 +277,7 @@
       right: 25px;
     }
 
-    .svg-email {
+    &--email svg {
       top: -2px;
       right: 20px;
     }
@@ -359,8 +359,17 @@
 
 @media (min-width: $desktop) {
 
+  .order-form {
+    width: auto;
+  }
+
   .order-form__desc{
-    width: 700px;
+    max-width: 700px;
+  }
+
+  .order-form__block--name {
+    margin-top: 38px;
+    margin-bottom: 45px;
   }
 
   .order-form__caption {
@@ -385,13 +394,13 @@
       right: 0;
     }
 
-    .svg-email {
+    &--email svg {
       right: 0;
     }
   }
 
   .order-form__btn-wrap {
     margin-top: 45px;
-    width: 700px;
+    max-width: 700px;
   }
 }

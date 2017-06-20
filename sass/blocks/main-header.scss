@@ -120,14 +120,11 @@
   svg {
     padding-right: 26px;
     padding-left: 26px;
-  }
-
-  path {
     fill: #d3d2d2;
   }
 
   &--search:hover{
-    path {
+    svg {
       fill: $color-green;
     }
 
@@ -137,7 +134,7 @@
   }
 
   &--search:active{
-    path {
+    svg {
       opacity: 0.3;
     }
 
@@ -147,7 +144,7 @@
   }
 
   &--cart:hover{
-    path {
+    svg {
       fill: $color-green;
     }
 
@@ -157,7 +154,7 @@
   }
 
   &--cart:active{
-    path {
+    svg {
       opacity: 0.3;
     }
 
