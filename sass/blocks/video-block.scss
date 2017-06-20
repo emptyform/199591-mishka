@@ -83,8 +83,8 @@
   width: 190px;
 }
 
-@media (min-width: 260px) and (min-resolution: 144dpi),
-  (min-width: 260px) and (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
     .video-block video {
       background-image: url(../img/video-mobile@2x.jpg);
       background-size: 260px 150px;
@@ -147,7 +147,7 @@
 }
 
 @media (min-width: $tablet) and (min-resolution: 144dpi),
-  (min-width: $tablet) and (min-resolution: 1.5dppx) {
+       (min-width: $tablet) and (min-resolution: 1.5dppx) {
     .video-block video {
       background-image: url(../img/video-tablet@2x.jpg);
       background-size: 668px 455px;
@@ -204,7 +204,7 @@
 }
 
 @media (min-width: $desktop) and (min-resolution: 144dpi),
-  (min-width: $desktop) and (min-resolution: 1.5dppx) {
+       (min-width: $desktop) and (min-resolution: 1.5dppx) {
     .video-block video {
       background-image: url(../img/video-desktop@2x.jpg);
       background-size: 682px 455px;

@@ -71,6 +71,11 @@
     }
   }
 
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 33px;
+  }
+
   &:active {
     a {
       color: rgba(255, 255, 255, 0.3);

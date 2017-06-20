@@ -12,6 +12,8 @@
   right: 28px;
   width: 32px;
   height: 30px;
+  background-color: transparent;
+  border: none;
 }
 
 .main-header--closed .main-header__toggle::before {
@@ -77,22 +79,20 @@
   }
 }
 
-.main-header__nav-list,
-.main-header__user-list {
+.main-header__menu-wrap {
   position: absolute;
   z-index: 5;
+}
+
+.main-header__nav-list,
+.main-header__user-list {
   padding: 0;
   margin: 0;
   width: 320px;
 }
 
-.main-header__user-list {
-  top: 251px;
-}
-
 .main-header__nav-item,
 .main-header__user-item {
-  position: relative;
   padding: 30px 10px;
   padding-left: 75px;
   background-color: #fff;
@@ -200,17 +200,18 @@
   }
 
   .main-header {
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-header__logo {
-    padding: 19px 0px;
-    margin-left: auto;
-    margin-right: 207px;
-
-    width: 110px;
+    position: absolute;
+    top: 15px;
+    right: 52%;
+    padding: 0;
+    width: 310px;
     text-align: left;
     border: none;
 
@@ -218,6 +219,13 @@
       width: 110px;
       height: 50px;
     }
+  }
+
+  .main-header__menu-wrap {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
   }
 
   .main-header__nav {
@@ -258,7 +266,7 @@
     position: static;
     order: 1;
     display: flex;
-    margin-left: 0;
+    margin-left: 50%;
     margin-right: auto;
     width: 350px;
   }
@@ -290,6 +298,7 @@
     &--cart {
       padding-top: 30px;
       padding-left: 0px;
+      width: 263px;
       text-align: right;
     }
   }
@@ -317,9 +326,14 @@
 
 @media (min-width: $desktop) {
 
+  .main-header__menu-wrap {
+    width: auto;
+  }
+
   .main-header__nav {
     order: -1;
-    width: 450px;
+    margin: 0;
+    width: 50%;
     border: none;
     background-color: #fff;
   }
@@ -339,22 +353,25 @@
     }
 
     &:first-child {
+      margin-left: auto;
       padding-left: 0px;
       border-right: 1px solid #ececec;
+    }
+
+    &:last-child {
+      margin-right: 125px;
     }
   }
 
   .main-header__logo {
-    width: 250px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 0px;
-    margin-right: 0px;
     padding: 0;
+    top: 10px;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
     text-align: left;
 
     .logotype {
-
       width: 150px;
       height: 75px;
     }
@@ -362,6 +379,18 @@
 
   .main-header__user-list {
     order: 1;
+    margin: 0;
+    width: 50%;
+  }
+
+  .main-header__user-item {
+    &:first-child {
+      margin-left: 175px;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
   }
 
   .main-header__stock {
@@ -415,7 +444,6 @@
     }
   }
 }
-
 
 
 
