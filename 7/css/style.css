@@ -457,6 +457,9 @@ body {
   background-color: #000;
   box-shadow: 0 6px 0 0 #000, 0 12px 0 0 #000; }
 
+.main-header--nojs .main-header__menu-wrap {
+  position: static; }
+
 .main-header--opened .main-header__toggle::before, .main-header--opened .main-header__toggle::after {
   content: "";
   position: absolute;
@@ -1276,6 +1279,19 @@ iframe {
   margin: 23px auto;
   width: 190px; }
 
+@media (max-width: 767px) {
+  .main-header--closed .main-header__nav-list,
+  .main-header--closed .main-header__user-list {
+    display: none; }
+  .main-header--nojs .main-header__toggle {
+    display: none; }
+  .main-header--nojs .main-header__nav-list {
+    display: block;
+    position: static; }
+  .main-header--nojs .main-header__user-list {
+    display: block;
+    position: static; } }
+
 @media (min-width: 768px) {
   .main-header__toggle {
     display: none;
@@ -1843,7 +1859,7 @@ iframe {
     order: -1;
     width: 668px;
     height: 455px;
-    background-image: url(/img/video-tablet@1x.jpg); }
+    background-image: url(../img/video-tablet@1x.jpg); }
   .video-block__video-btn {
     top: 190px;
     left: 284px; }
@@ -1868,34 +1884,6 @@ iframe {
   .video-block__btn {
     margin: 33px 40px 43px;
     width: auto; } }
-
-@media (min-width: 768px) and (min-width: 768px) {
-  .directory-catalog__list {
-    padding: 0 50px;
-    width: 668px; }
-  .reviews {
-    padding: 0 50px;
-    width: 668px; }
-  .order-form__desc {
-    padding: 0 50px;
-    width: 668px; }
-  .order-form__block {
-    padding: 0 50px;
-    width: 668px; }
-  .order-form__btn-wrap {
-    padding: 0 50px;
-    width: 668px; } }
-
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-  .reviews {
-    background-image: url("../img/review@2x.jpg");
-    background-size: 350px 457px; }
-  .contacts__map {
-    background-image: url(../img/map-tablet@2x.jpg);
-    background-size: 768px 457px; }
-  .video-block video {
-    background-image: url(../img/video-tablet@2x.jpg);
-    background-size: 668px 455px; } }
 
 @media (min-width: 1150px) {
   .main-header__menu-wrap {
@@ -2074,10 +2062,10 @@ iframe {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
-    padding: 0 30px;
-    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 105px;
+    width: 1150px;
     background-size: auto 20px; }
   .contacts__data-wrapper {
     margin: 0;
@@ -2189,7 +2177,7 @@ iframe {
     float: left;
     width: 682px;
     height: 455px;
-    background-image: url(/img/video-desktop@1x.jpg); }
+    background-image: url(../img/video-desktop@1x.jpg); }
   .video-block__title {
     margin-bottom: 32px;
     padding-top: 78px;
@@ -2213,6 +2201,17 @@ iframe {
     width: 230px;
     vertical-align: top; } }
 
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-title--main {
+    background-image: url(../img/hero-mobile@2x.jpg);
+    background-size: 575px auto; }
+  .contacts__map {
+    background-image: url(../img/map-mobile@2x.jpg);
+    background-size: 260px 457px; }
+  .video-block video {
+    background-image: url(../img/video-mobile@2x.jpg);
+    background-size: 260px 150px; } }
+
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
   .page-title--main {
     background-image: url(../img/hero-desktop@2x.jpg);
@@ -2223,6 +2222,23 @@ iframe {
   .video-block video {
     background-image: url(../img/video-desktop@2x.jpg);
     background-size: 682px 455px; } }
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .directory-catalog__list {
+    padding: 0 50px;
+    width: 668px; }
+  .reviews {
+    padding: 0 50px;
+    width: 668px; }
+  .order-form__desc {
+    padding: 0 50px;
+    width: 668px; }
+  .order-form__block {
+    padding: 0 50px;
+    width: 668px; }
+  .order-form__btn-wrap {
+    padding: 0 50px;
+    width: 668px; } }
 
 @media (min-width: 768px) and (min-width: 1150px) {
   .directory-catalog__list {
@@ -2236,35 +2252,13 @@ iframe {
   .order-form__btn-wrap {
     width: 1050px; } }
 
-@media (min-width: 1150px) and (min-width: 768px) {
-  .contacts {
-    padding: 0 50px;
-    width: 668px; } }
-
-@media (min-width: 1150px) and (min-width: 1150px) {
-  .contacts {
-    width: 1050px; } }
-
-@media (max-width: 767px) {
-  .main-header--closed .main-header__nav-list,
-  .main-header--closed .main-header__user-list {
-    display: none; }
-  .main-header--nojs .main-header__toggle {
-    display: none; }
-  .main-header--nojs .main-header__nav-list {
-    display: block;
-    position: static; }
-  .main-header--nojs .main-header__user-list {
-    display: block;
-    position: static; } }
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .page-title--main {
-    background-image: url(../img/hero-mobile@2x.jpg);
-    background-size: 575px auto; }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .reviews {
+    background-image: url("../img/review@2x.jpg");
+    background-size: 350px 457px; }
   .contacts__map {
-    background-image: url(../img/map-mobile@2x.jpg);
-    background-size: 260px 457px; }
+    background-image: url(../img/map-tablet@2x.jpg);
+    background-size: 768px 457px; }
   .video-block video {
-    background-image: url(../img/video-mobile@2x.jpg);
-    background-size: 260px 150px; } }
+    background-image: url(../img/video-tablet@2x.jpg);
+    background-size: 668px 455px; } }
