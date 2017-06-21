@@ -30,6 +30,13 @@
               0 12px 0 0 #000;
 }
 
+.main-header--nojs {
+
+  .main-header__menu-wrap {
+    position: static;
+  }
+}
+
 .main-header--opened .main-header__toggle {
   &::before,
   &::after {
