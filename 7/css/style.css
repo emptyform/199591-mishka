@@ -750,6 +750,7 @@ body {
 
 .reviews__item {
   margin: 0;
+  width: 100%;
   line-height: 30px; }
 
 .reviews__text {
@@ -1472,9 +1473,7 @@ iframe {
   .popular__table-col:first-child {
     padding-right: 0px; }
   .popular__price-wrap {
-    display: inline-block;
-    width: 290px;
-    vertical-align: bottom; }
+    width: 290px; }
   .popular__price {
     margin-bottom: 24px;
     font-size: 20px; }
@@ -1555,6 +1554,8 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     width: 668px; }
+  .reviews__item {
+    width: 100%; }
   .reviews__bottom-wrap {
     display: -ms-flexbox;
     display: flex;
