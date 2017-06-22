@@ -30,6 +30,13 @@
               0 12px 0 0 #000;
 }
 
+.main-header--nojs {
+
+  .main-header__menu-wrap {
+    position: static;
+  }
+}
+
 .main-header--opened .main-header__toggle {
   &::before,
   &::after {
@@ -120,14 +127,11 @@
   svg {
     padding-right: 26px;
     padding-left: 26px;
-  }
-
-  path {
     fill: #d3d2d2;
   }
 
   &--search:hover{
-    path {
+    svg {
       fill: $color-green;
     }
 
@@ -137,7 +141,7 @@
   }
 
   &--search:active{
-    path {
+    svg {
       opacity: 0.3;
     }
 
@@ -147,7 +151,7 @@
   }
 
   &--cart:hover{
-    path {
+    svg {
       fill: $color-green;
     }
 
@@ -157,7 +161,7 @@
   }
 
   &--cart:active{
-    path {
+    svg {
       opacity: 0.3;
     }
 
