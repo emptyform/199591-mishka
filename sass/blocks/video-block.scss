@@ -16,7 +16,7 @@
   video {
     margin-bottom: 21px;
     background-color: $bg-grey;
-    background-image: url(../img/video-mobile@1x.jpg);
+    background-image: url("../img/video-mobile@1x.jpg");
     background-repeat: no-repeat;
   }
 }
@@ -30,7 +30,7 @@
   top: 130px;
   left: 80px;
   background-color: transparent;
-  background-image: url(../img/icon-play.svg);
+  background-image: url("../img/icon-play.svg");
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
@@ -66,7 +66,7 @@
     height: 30px;
     top: 7px;
     left: 32px;
-    background-image: url(../img/icon-video.svg);
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -86,7 +86,7 @@
 @media (min-resolution: 144dpi),
        (min-resolution: 1.5dppx) {
     .video-block video {
-      background-image: url(../img/video-mobile@2x.jpg);
+      background-image: url("../img/video-mobile@2x.jpg");
       background-size: 260px 150px;
     }
 }
@@ -103,7 +103,7 @@
       order: -1;
       width: 668px;
       height: 455px;
-      background-image: url(../img/video-tablet@1x.jpg);
+      background-image: url("../img/video-tablet@1x.jpg");
     }
   }
 
@@ -149,7 +149,7 @@
 @media (min-width: $tablet) and (min-resolution: 144dpi),
        (min-width: $tablet) and (min-resolution: 1.5dppx) {
     .video-block video {
-      background-image: url(../img/video-tablet@2x.jpg);
+      background-image: url("../img/video-tablet@2x.jpg");
       background-size: 668px 455px;
     }
 }
@@ -167,7 +167,7 @@
       float: left;
       width: 682px;
       height: 455px;
-      background-image: url(../img/video-desktop@1x.jpg);
+      background-image: url("../img/video-desktop@1x.jpg");
     }
   }
 
@@ -206,7 +206,7 @@
 @media (min-width: $desktop) and (min-resolution: 144dpi),
        (min-width: $desktop) and (min-resolution: 1.5dppx) {
     .video-block video {
-      background-image: url(../img/video-desktop@2x.jpg);
+      background-image: url("../img/video-desktop@2x.jpg");
       background-size: 682px 455px;
     }
 }
