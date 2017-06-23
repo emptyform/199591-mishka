@@ -13,37 +13,37 @@
   @include font(17px, 20px, bold, #000);
 
   &--ecology {
-    background-image: url(../img/icon-feature-1.svg);
+    background-image: url("../img/icon-feature-1.svg");
     background-repeat: no-repeat;
     background-size: 32px 37px;
   }
 
   &--knit {
-    background-image: url(../img/icon-feature-2.svg);
+    background-image: url("../img/icon-feature-2.svg");
     background-repeat: no-repeat;
     background-size: 34px 34px;
   }
 
   &--style {
-    background-image: url(../img/icon-feature-3.svg);
+    background-image: url("../img/icon-feature-3.svg");
     background-repeat: no-repeat;
     background-size: 47px 27px;
   }
 
   &--manufacturer {
-    background-image: url(../img/icon-feature-4.svg);
+    background-image: url("../img/icon-feature-4.svg");
     background-repeat: no-repeat;
     background-size: 54px 23px;
   }
 
   &--likes {
-    background-image: url(../img/icon-feature-5.svg);
+    background-image: url("../img/icon-feature-5.svg");
     background-repeat: no-repeat;
     background-size: 33px 28px;
   }
 
   &--present {
-    background-image: url(../img/icon-feature-6.svg);
+    background-image: url("../img/icon-feature-6.svg");
     background-repeat: no-repeat;
     background-size: 33px 33px;
   }

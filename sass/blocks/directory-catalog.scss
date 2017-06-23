@@ -39,7 +39,7 @@
 
     &::after {
       opacity: 0.5;
-      background-image: url(../img/icon-interior.svg);
+      background-image: url("../img/icon-interior.svg");
       background-repeat: no-repeat;
       background-position: center center;
     }
@@ -57,7 +57,7 @@
     background-color: #56c3b2;
     &::after {
       opacity: 0.5;
-      background-image: url(../img/icon-toy.svg);
+      background-image: url("../img/icon-toy.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
